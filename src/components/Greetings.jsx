@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './Greetings.css'; // Ensure you import your CSS
 
 const greetings = [
-    "Hello",
     "नमस्ते",
     "வணக்கம்",
     "ഹലോ",
@@ -18,7 +17,8 @@ const greetings = [
     "Merhaba",
     "Salam",
     "Zdravo",
-    "నమస్కారం 🙏"
+    "నమస్కారం 🙏",
+    "Hello"
 ];
 
 const Greeting = ({ onComplete }) => {
@@ -33,10 +33,10 @@ const Greeting = ({ onComplete }) => {
                 setCurrentGreeting(greetings[index]);
                 
                 let displayDuration = 100; // Default duration for other greetings
-                if (greetings[index] === "Hello") {
+                if (greetings[index] === "నమస్కారం 🙏") {
                     displayDuration = 1000; // Longer duration for "Hello"
-                } else if (greetings[index] === "నమస్కారం 🙏") {
-                    displayDuration = 800; // Longer duration for last Telugu greeting
+                } else if (greetings[index] === "Hello") {
+                    displayDuration = 1000; // Longer duration for last Telugu greeting
                 }
 
                 timeoutId = setTimeout(() => {
