@@ -25,7 +25,7 @@ const Greeting = ({ onComplete }) => {
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        let timeoutId; // Declare a variable to hold the timeout ID
+        let timeoutId;
 
         const showGreeting = () => {
             if (index < greetings.length) {
@@ -38,20 +38,18 @@ const Greeting = ({ onComplete }) => {
                     displayDuration = 500;
                 }
 
-                // Schedule next greeting after current one is displayed
                 timeoutId = setTimeout(() => {
                     setIndex(prevIndex => prevIndex + 1);
                 }, displayDuration);
             } else {
-                // Call onComplete after all greetings are shown
                 timeoutId = setTimeout(onComplete, 100);
             }
         };
 
         showGreeting();
 
-        return () => clearTimeout(timeoutId); // Clean up timeout on unmount
-    }, [index, onComplete]); // Add index to dependencies
+        return () => clearTimeout(timeoutId);
+    }, [index, onComplete]);
 
     return (
         <div id="greeting">
