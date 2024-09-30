@@ -1,3 +1,4 @@
+import React, { useState } from 'react'; // Import useState
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Projects from "./Projects";
@@ -7,8 +8,9 @@ import Skills from "./Skills";
 import About from "./About";
 import Education from "./Education";
 import Greeting from './Greeting'; 
+
 function App() {
-  const [showMainContent, setShowMainContent] = useState(false);
+  const [showMainContent, setShowMainContent] = useState(false); // Initialize state
 
   const handleGreetingComplete = () => {
       setShowMainContent(true);
@@ -16,15 +18,22 @@ function App() {
 
   return (
     <div>
-      <Home />
-      <About />
-      <Education />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Connect />
-      <Navbar />
+      {!showMainContent ? ( // Render Greeting if main content is not shown
+        <Greeting onComplete={handleGreetingComplete} />
+      ) : (
+        <>
+          <Home />
+          <About />
+          <Education />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Connect />
+          <Navbar />
+        </>
+      )}
     </div>
   );
 }
+
 export default App;
