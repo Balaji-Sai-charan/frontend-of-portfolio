@@ -32,11 +32,11 @@ const Greeting = ({ onComplete }) => {
             if (index < greetings.length) {
                 setCurrentGreeting(greetings[index]);
                 
-                let displayDuration = 80; // Default duration for other greetings
+                let displayDuration = 100; // Default duration for other greetings
                 if (greetings[index] === "Hello") {
-                    displayDuration = 800; // Longer duration for "Hello"
+                    displayDuration = 1000; // Longer duration for "Hello"
                 } else if (greetings[index] === "నమస్కారం 🙏") {
-                    displayDuration = 1000; // Longer duration for last Telugu greeting
+                    displayDuration = 800; // Longer duration for last Telugu greeting
                 }
 
                 timeoutId = setTimeout(() => {
