@@ -34,9 +34,9 @@ const Greeting = ({ onComplete }) => {
                 
                 let displayDuration = 100; // Default duration for other greetings
                 if (greetings[index] === "నమస్కారం 🙏") {
-                    displayDuration = 1000; // Longer duration for "Hello"
+                    displayDuration = 1000; // Longer duration for Telugu greeting
                 } else if (greetings[index] === "Hello") {
-                    displayDuration = 1000; // Longer duration for last Telugu greeting
+                    displayDuration = 1000; // Longer duration for last greeting
                 }
 
                 timeoutId = setTimeout(() => {
@@ -44,7 +44,6 @@ const Greeting = ({ onComplete }) => {
                 }, displayDuration);
             } else {
                 timeoutId = setTimeout(() => {
-                    // Add transition effect before calling onComplete
                     setCurrentGreeting(''); // Clear greeting before transitioning
                     onComplete();
                 }, 300); // Short delay before transitioning
@@ -58,7 +57,15 @@ const Greeting = ({ onComplete }) => {
 
     return (
         <div id="greeting">
+            <div id="title">
+                <span>PURE CSS</span>
+                <br />
+                <span>PARALLAX PIXEL STARS</span>
+            </div>
             <h1>{currentGreeting}</h1>
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
         </div>
     );
 };
