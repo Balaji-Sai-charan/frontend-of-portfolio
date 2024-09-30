@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Skills from "./Skills";
 import About from "./About";
 import Education from "./Education";
+import Greeting from './Greeting'; 
 function App() {
   const [showMainContent, setShowMainContent] = useState(false);
 
