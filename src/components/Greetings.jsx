@@ -36,7 +36,7 @@ const Greeting = ({ onComplete }) => {
                     displayDuration = 500;
                 }
 
-                setIndex(index + 1);
+                setIndex(prevIndex => prevIndex + 1); // Use functional update
                 setTimeout(showGreeting, displayDuration);
             } else {
                 setTimeout(onComplete, 100); // Call onComplete after all greetings are shown
@@ -44,8 +44,7 @@ const Greeting = ({ onComplete }) => {
         };
 
         showGreeting();
-    }, [index, onComplete]);
-
+    }, [onComplete]); // Removed index from dependencies
 
     return (
         <div id="greeting">
