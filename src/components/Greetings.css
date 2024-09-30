@@ -9,7 +9,7 @@ body {
     align-items: center;
     height: 100vh; /* Full viewport height */
     text-align: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Blue to violet gradient */
+    background: linear-gradient(135deg, #6A0DAD, #FF00FF); /* Blue to violet gradient */
     color: white; /* Text color */
 }
 
