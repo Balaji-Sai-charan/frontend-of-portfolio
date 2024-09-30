@@ -35,9 +35,9 @@ export default function Education() {
                 <span>
                   <i className="fa-solid fa-school fa-3x"></i>
                 </span>
-                <span className="badge">2014-2019</span>
-                <p>Tiny Tots High School</p>
-                <p>VI-X </p>
+                <span className="badge">2018-2019</span>
+                <p>Bhashyam High School</p>
+                <p>X </p>
                 <p style={{ fontWeight: "bolder", textTransform: "uppercase" }}>
                   CGPA : 10
                 </p>
@@ -71,10 +71,10 @@ export default function Education() {
                   <i className="fa-solid fa-user-graduate fa-3x"></i>
                 </span>
                 <span className="badge">2021-2025</span>
-                <p>National Institute of Technology,Raipur</p>
-                <p>B.Tech (CSE)</p>
+                <p>Indian Institute of Technology(Indian School of Mines),Dhanbad</p>
+                <p>B.Tech (Mechanical)</p>
                 <p style={{ fontWeight: "bolder", textTransform: "uppercase" }}>
-                  CGPA: 8.09 (till 6th semester)
+                  CGPA: 7.12 (till 6th semester)
                 </p>
               </div>
             </div>
