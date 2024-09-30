@@ -115,7 +115,7 @@ function Contact() {
                         ></i>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location
                       </td>
-                      <td className="td">:&nbsp;Guntur,Andhra Pradesh,India</td>
+                      <td className="td">:&nbsp;Visakhapatnam,Andhra Pradesh,India</td>
                     </tr>
                     <tr>
                       <td>
