@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Greetings.css'; // Ensure you import your CSS
 
 const greetings = [
+    "నమస్కారం 🙏",
     "नमस्ते",
     "வணக்கம்",
     "ഹലോ",
@@ -17,7 +18,6 @@ const greetings = [
     "Merhaba",
     "Salam",
     "Zdravo",
-    "నమస్కారం 🙏",
     "Hello"
 ];
 
