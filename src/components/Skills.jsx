@@ -39,12 +39,12 @@ export default function Skills() {
                   <div className="front-end">
                     <p>
                       <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCnnJKugRO6kiMWwkL80X3A75Wu9uEAbscXQ&usqp=CAU"
+                        src="https://imgur.com/NwqwubD"
                         width="30"
                         height="30"
                         alt=""
                       ></img>
-                      <span>C</span>
+                      <span>DSA</span>
                     </p>
                     <p>
                       <img
