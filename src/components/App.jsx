@@ -1,39 +1,63 @@
-import React, { useState } from 'react'; // Import useState
-import Navbar from "./Navbar";
-import Home from "./Home";
-import Projects from "./Projects";
-import Connect from "./Connect";
-import Contact from "./Contact";
-import Skills from "./Skills";
-import About from "./About";
-import Education from "./Education";
-import Greeting from './Greetings'; 
+import React, { useEffect, useState } from 'react';
 
-function App() {
-  const [showMainContent, setShowMainContent] = useState(false); // Initialize state
+const greetings = [
+    "Hello",
+    "नमस्ते",
+    "வணக்கம்",
+    "ഹലോ",
+    "ಹಲೋ",
+    "Bonjour",
+    "Hola",
+    "Ciao",
+    "Howdy",
+    "Привет",
+    "你好",
+    "안녕하세요",
+    "こんにちは",
+    "Merhaba",
+    "Salam",
+    "Zdravo",
+    "నమస్కారం 🙏"
+];
 
-  const handleGreetingComplete = () => {
-      setShowMainContent(true);
-  };
+const Greeting = ({ onComplete }) => {
+    const [currentGreeting, setCurrentGreeting] = useState('');
+    const [index, setIndex] = useState(0);
 
-  return (
-    <div>
-      {!showMainContent ? ( // Render Greeting if main content is not shown
-        <Greeting onComplete={handleGreetingComplete} />
-      ) : (
-        <>
-          <Home />
-          <About />
-          <Education />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Connect />
-          <Navbar />
-        </>
-      )}
-    </div>
-  );
-}
+    useEffect(() => {
+        let timeoutId; // Declare a variable to hold the timeout ID
 
-export default App;
+        const showGreeting = () => {
+            if (index < greetings.length) {
+                setCurrentGreeting(greetings[index]);
+                
+                let displayDuration = 80;
+                if (greetings[index] === "Hello") {
+                    displayDuration = 400;
+                } else if (greetings[index] === "నమస్కారం 🙏") {
+                    displayDuration = 500;
+                }
+
+                // Schedule next greeting after current one is displayed
+                timeoutId = setTimeout(() => {
+                    setIndex(prevIndex => prevIndex + 1);
+                }, displayDuration);
+            } else {
+                // Call onComplete after all greetings are shown
+                timeoutId = setTimeout(onComplete, 100);
+            }
+        };
+
+        showGreeting();
+
+        return () => clearTimeout(timeoutId); // Clean up timeout on unmount
+    }, [index, onComplete]); // Add index to dependencies
+
+    return (
+        <div id="greeting">
+            <h1>{currentGreeting}</h1>
+        </div>
+    );
+};
+
+export default Greeting;
