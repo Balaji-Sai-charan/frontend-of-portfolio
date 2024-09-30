@@ -25,26 +25,33 @@ const Greeting = ({ onComplete }) => {
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
+        let timeoutId; // Declare a variable to hold the timeout ID
+
         const showGreeting = () => {
             if (index < greetings.length) {
                 setCurrentGreeting(greetings[index]);
+                
                 let displayDuration = 80;
-
                 if (greetings[index] === "Hello") {
                     displayDuration = 400;
                 } else if (greetings[index] === "నమస్కారం 🙏") {
                     displayDuration = 500;
                 }
 
-                setIndex(prevIndex => prevIndex + 1); // Use functional update
-                setTimeout(showGreeting, displayDuration);
+                // Schedule next greeting after current one is displayed
+                timeoutId = setTimeout(() => {
+                    setIndex(prevIndex => prevIndex + 1);
+                }, displayDuration);
             } else {
-                setTimeout(onComplete, 100); // Call onComplete after all greetings are shown
+                // Call onComplete after all greetings are shown
+                timeoutId = setTimeout(onComplete, 100);
             }
         };
 
         showGreeting();
-    }, [onComplete]); // Removed index from dependencies
+
+        return () => clearTimeout(timeoutId); // Clean up timeout on unmount
+    }, [index, onComplete]); // Add index to dependencies
 
     return (
         <div id="greeting">
