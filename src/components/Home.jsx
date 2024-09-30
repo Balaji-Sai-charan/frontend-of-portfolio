@@ -26,7 +26,7 @@ export default function Home() {
 
                   <div className="animation" data-aos="fade-left">
                     <div className="first">
-                      <div>Sasi Chandan</div>
+                      <div>Sai Charan</div>
                     </div>
                     <div className="second">
                       <div>Programmer</div>
