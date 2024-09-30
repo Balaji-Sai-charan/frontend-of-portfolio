@@ -53,4 +53,4 @@ const Greeting = ({ onComplete }) => {
     );
 };
 
-export default Greetings;
+export default Greeting;
