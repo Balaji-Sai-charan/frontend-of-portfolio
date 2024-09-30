@@ -36,16 +36,16 @@ const Greeting = ({ onComplete }) => {
                     displayDuration = 500;
                 }
 
-                console.log(`Index: ${index}, Greeting: ${greetings[index]}`);
                 setIndex(index + 1);
                 setTimeout(showGreeting, displayDuration);
             } else {
-                setTimeout(onComplete, 100);
+                setTimeout(onComplete, 100); // Call onComplete after all greetings are shown
             }
         };
 
         showGreeting();
     }, [index, onComplete]);
+
 
     return (
         <div id="greeting">
