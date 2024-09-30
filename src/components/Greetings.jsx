@@ -18,7 +18,7 @@ const greetings = [
     "Merhaba",
     "Salam",
     "Zdravo",
-    "Hello"
+    "Hello, Hope you are doing well"
 ];
 
 const Greeting = ({ onComplete }) => {
@@ -35,7 +35,7 @@ const Greeting = ({ onComplete }) => {
                 let displayDuration = 100; // Default duration for other greetings
                 if (greetings[index] === "నమస్కారం 🙏") {
                     displayDuration = 1000; // Longer duration for "Hello"
-                } else if (greetings[index] === "Hello") {
+                } else if (greetings[index] === "Hello, Hope you are doing well") {
                     displayDuration = 1000; // Longer duration for last Telugu greeting
                 }
 
