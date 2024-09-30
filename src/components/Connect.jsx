@@ -22,7 +22,7 @@ export default function Connect() {
         data-aos-easing="linear"
       >
         <div>
-          <a target="_blank" href="https://www.instagram.com/bhargav._.2266/">
+          <a target="_blank" href="https://www.instagram.com/balaji_sai_charan_/">
             <p id="insta">
               <i className="fa-brands fa-instagram"></i>
               <span>&nbsp;Instagram&nbsp;</span>
@@ -32,7 +32,7 @@ export default function Connect() {
         <div>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/bhargav-sasi-chandan-67575a249/"
+            href="https://www.linkedin.com/in/balaji-sai-charan/"
           >
             <p id="linked">
               <i className="fa-brands fa-linkedin"></i>
@@ -41,7 +41,7 @@ export default function Connect() {
           </a>
         </div>
         <div>
-          <a target="_blank" href="https://github.com/Sasichandan01">
+          <a target="_blank" href="https://github.com/Balaji-Sai-charan">
             <p id="github">
               {" "}
               <i className="fa-brands fa-github"></i>
