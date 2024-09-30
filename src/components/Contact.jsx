@@ -29,7 +29,7 @@ function Contact() {
     });
     try {
       const response = await fetch(
-        `https://portfolioback-4hta.onrender.com/api/auth/contact`,
+        `https://back-y3fx.onrender.com/api/auth/contact`,
         {
           method: "POST",
           headers: {
@@ -125,7 +125,7 @@ function Contact() {
                         ></i>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email
                       </td>
-                      <td className="td">:&nbsp;sasichandan34@gmail.com</td>
+                      <td className="td">:&nbsp;balajisaicharan975@gmail.com</td>
                     </tr>
                     <tr>
                       <td>
@@ -137,7 +137,7 @@ function Contact() {
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Education
                       </td>
                       <td className="td">
-                        :&nbsp;National Institute of Technology,Raipur
+                        :&nbsp;Indian Institute of Technology(Indian School of Mines),Dhanbad
                       </td>
                     </tr>
                     <tr>
@@ -149,7 +149,7 @@ function Contact() {
                         ></i>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile Number
                       </td>
-                      <td className="td">:&nbsp;+91 9014742232</td>
+                      <td className="td">:&nbsp;+91 8247549034</td>
                     </tr>
                     <tr>
                       <td>
