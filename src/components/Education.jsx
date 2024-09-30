@@ -72,7 +72,7 @@ export default function Education() {
                 </span>
                 <span className="badge">2021-2025</span>
                 <p>Indian Institute of Technology(Indian School of Mines),Dhanbad</p>
-                <p>B.Tech (Mechanical)</p>
+                <p>B.Tech (Mechanical Engineering)</p>
                 <p style={{ fontWeight: "bolder", textTransform: "uppercase" }}>
                   CGPA: 7.12 (till 6th semester)
                 </p>
