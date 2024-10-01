@@ -57,7 +57,7 @@ export default function Projects() {
               >
                 <div>
                   <div className="card">
-                    <img src="https://imgur.com/a/JKqeGOj" alt="" />
+                    <img src="https://i.imgur.com/b8bLXiJ.png" alt="" />
                     <div className="card-content">
                       <h2>Portfolio</h2>
                       <p>
@@ -148,7 +148,7 @@ export default function Projects() {
                 </div>
                 <div>
                   <div className="card">
-                    <img src="https://imgur.com/a/vYK3m9y" alt="" />
+                    <img src="https://i.imgur.com/0TBEBxN.png" alt="" />
                     <div className="card-content">
                       <h2>Snake Game</h2>
                       <p>
@@ -169,7 +169,7 @@ export default function Projects() {
                 </div>
                 <div>
                   <div className="card">
-                    <img src="https://imgur.com/a/aZqcPLE" alt="" />
+                    <img src="https://i.imgur.com/3KLuWZS.png" alt="" />
                     <div className="card-content">
                       <h2>Stop Watch</h2>
                       <p>
@@ -196,7 +196,7 @@ export default function Projects() {
                 </div>
                 <div>
                   <div className="card">
-                    <img src="https://imgur.com/a/s3vLmZG" alt="" />
+                    <img src="https://i.imgur.com/Rx4Qg9V.png" alt="" />
                     <div className="card-content">
                       <h2>Sudoku Solver</h2>
                       <p>
@@ -217,7 +217,7 @@ export default function Projects() {
                 </div>
                 <div>
                   <div className="card">
-                    <img src="https://imgur.com/a/Q6F2kmc" alt="" />
+                    <img src="https://i.imgur.com/UPr4hA5.png" alt="" />
                     <div className="card-content">
                       <h2>To do List</h2>
                       <p>
