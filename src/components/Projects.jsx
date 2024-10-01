@@ -121,7 +121,7 @@ export default function Projects() {
                 </div>
                 <div>
                   <div className="card">
-                    <img src="https://imgur.com/a/0pmv3NW" alt="" />
+                    <img src="https://i.imgur.com/cJdfWlN.png" alt="" />
                     <div className="card-content">
                       <h2>Exploria-Tourist Website</h2>
                       <p>
