@@ -125,8 +125,8 @@ export default function Projects() {
                     <div className="card-content">
                       <h2>Exploria-Tourist Website</h2>
                       <p>
-                       Exploria is an interactive online platform designed to enhance your travel planning experience. Users can explore a variety of tourism packages tailored to different interests and budgets. The website features a visually appealing layout with smooth animations and transitions, making navigation enjoyable and intuitive.
-                        <br />
+                        Exploria is an interactive platform that simplifies travel planning. Users can explore various tourism packages suited to different interests and budgets, with a visually appealing layout and smooth, intuitive navigation.
+                                             <br />
                         <b>Tech Used:</b> Javascript, CSS, HTML,Media Queries, HTML
                       </p>
                       <a
@@ -152,8 +152,7 @@ export default function Projects() {
                     <div className="card-content">
                       <h2>Snake Game</h2>
                       <p>
-                       A Snake Game is a console-based application developed using C++ for the Windows platform. The game provides a classic, interactive experience where users control a snake, navigate the playing field, and aim to consume food while avoiding collisions with the walls or the snake's own body. The game tracks the player's score, increasing as the snake grows, and offers a real-time, dynamic gaming environment directly within the console window.
-                        <br />
+                          The Snake Game is a console-based C++ application for Windows where users control a snake to consume food while avoiding walls and its own body. The game tracks the score as the snake grows, offering a dynamic, real-time experience in the console.                        <br />
                         <b>Tech Used:</b> DSA,OOPS,Windows Console
                       </p>
                       <a
@@ -173,8 +172,7 @@ export default function Projects() {
                     <div className="card-content">
                       <h2>Stop Watch</h2>
                       <p>
-                       A Stopwatch Application is a time-tracking tool designed with features to start, pause, reset, and track lap times. Users can accurately measure intervals of time, pause and resume as needed, reset the timer back to zero, and capture specific lap times during the session. The interface is simple and user-friendly, offering precise time management and recording functionality.
-                        <br />
+        The Stopwatch Application is a time-tracking tool with features to start, pause, reset, and track lap times. Users can measure intervals, reset the timer, and record laps, all through a simple, user-friendly interface.                        <br />
                         <b>Tech Used:</b> Javascript, Css, HTMl
                       </p>
                       <a
@@ -200,9 +198,8 @@ export default function Projects() {
                     <div className="card-content">
                       <h2>Sudoku Solver</h2>
                       <p>
-                        A Sudoku Solver is a C++ program that utilizes the backtracking algorithm to solve Sudoku puzzles. The program takes an unsolved Sudoku grid as input and systematically fills in the empty cells, ensuring that each number placement follows the game's rules. By exploring potential solutions and backtracking when conflicts arise, the algorithm efficiently finds a valid solution, providing users with a fully solved puzzle.
-                        <br />
-                        <b>Tech Used:</b> Data Structures and Algorithms,c++
+The Sudoku Solver is a C++ program that uses the backtracking algorithm to solve puzzles. It takes an unsolved grid as input, fills in empty cells while adhering to Sudoku rules, and efficiently finds a valid solution by exploring potential placements and backtracking when conflicts occur.                        <br />
+                        <b>Tech Used:</b> DSA,c++
                       </p>
                       <a
                         target="_blank"
@@ -221,8 +218,7 @@ export default function Projects() {
                     <div className="card-content">
                       <h2>To do List</h2>
                       <p>
-                        A To-Do List is a web-based application developed using HTML, CSS, and JavaScript. It allows users to manage tasks by adding, editing, and deleting items from the list. The interface is simple and intuitive, providing features such as task completion tracking and the ability to mark items as done. Users can organize their tasks efficiently, with the dynamic behavior enabled through JavaScript and a clean, responsive design built using HTML and CSS.
-                        <br />
+The To-Do List is a web application using HTML, CSS, and JavaScript that allows users to manage tasks by adding, editing, and deleting items. It features an intuitive interface for tracking completion and marking tasks as done, with dynamic functionality and a responsive design.                        <br />
                         <b>Tech Used:</b> Javascript, Css, HTML
                       </p>
                       <a
