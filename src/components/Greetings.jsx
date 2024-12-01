@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Greetings.css'; // Ensure you import your CSS
+import './Greetings.css';
 
 const greetings = [
     "నమస్కారం 🙏",
