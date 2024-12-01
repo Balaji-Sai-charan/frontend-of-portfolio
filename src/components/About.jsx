@@ -45,7 +45,7 @@ export default function About() {
             <button>
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1UJqJya9yP_VsimlOoK0LFylk4SMtnSkM/view?usp=sharing" rel="noreferrer"
+                href="https://drive.google.com/file/d/1P1g0i3E50DnBxV1j00JjZsJzHzVlbCs5/view?usp=drive_link" rel="noreferrer"
               >
                 Download CV &nbsp;
                 <i
