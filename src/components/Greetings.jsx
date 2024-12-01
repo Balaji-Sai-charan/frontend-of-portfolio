@@ -32,11 +32,11 @@ const Greeting = ({ onComplete }) => {
             if (index < greetings.length) {
                 setCurrentGreeting(greetings[index]);
                 
-                let displayDuration = 100; // Default duration for other greetings
+                let displayDuration = 100;
                 if (greetings[index] === "నమస్కారం 🙏") {
-                    displayDuration = 1000; // Longer duration for "Hello"
+                    displayDuration = 1000;
                 } else if (greetings[index] === "Hello, Hope you are doing well") {
-                    displayDuration = 1000; // Longer duration for last Telugu greeting
+                    displayDuration = 1000;
                 }
 
                 timeoutId = setTimeout(() => {
@@ -45,9 +45,9 @@ const Greeting = ({ onComplete }) => {
             } else {
                 timeoutId = setTimeout(() => {
                     // Add transition effect before calling onComplete
-                    setCurrentGreeting(''); // Clear greeting before transitioning
+                    setCurrentGreeting('');
                     onComplete();
-                }, 300); // Short delay before transitioning
+                }, 300); 
             }
         };
 
